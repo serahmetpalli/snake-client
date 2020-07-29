@@ -12,8 +12,18 @@ const connect = function () {
   conn.setEncoding('utf8');
 
   conn.on('data', function(data){
-    console.log(data)
-  })
+    console.log(data);
+  });
+
+  conn.on('connect', function(){
+    console.log('Successfully connected to game server');
+  });
+  
+  conn.on('connect', () => {
+    conn.write('Name: SSS');
+  });
+ 
+  
   return conn;
 }
 
