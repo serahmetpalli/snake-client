@@ -20,19 +20,19 @@ const connect = function () {
     conn.write('Name: SSS');
   });
 
-  // conn.on('connect', () => {
+  // conn.on('w', () => {
   //   conn.write('Move: up');
   // });
 
-  // conn.on('connect', () => {
-  //   conn.write('Move: right');
+  // conn.on('a', () => {
+  //   conn.write('Move: left');
   // });
 
-  // conn.on('connect', () => {
-  //   conn.write('Move: right');
+  // conn.on('s', () => {
+  //   conn.write('Move: down');
   // });
 
-  // conn.on('connect', () => {
+  // conn.on('d', () => {
   //   conn.write('Move: down');
   // });
     
