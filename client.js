@@ -1,7 +1,4 @@
 const net = require('net');
-/**
- * Establishes connection with the game server
- */
 
 const connect = function () {
   const conn = net.createConnection({
@@ -22,8 +19,23 @@ const connect = function () {
   conn.on('connect', () => {
     conn.write('Name: SSS');
   });
- 
-  
+
+  // conn.on('connect', () => {
+  //   conn.write('Move: up');
+  // });
+
+  // conn.on('connect', () => {
+  //   conn.write('Move: right');
+  // });
+
+  // conn.on('connect', () => {
+  //   conn.write('Move: right');
+  // });
+
+  // conn.on('connect', () => {
+  //   conn.write('Move: down');
+  // });
+    
   return conn;
 }
 
